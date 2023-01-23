@@ -3823,9 +3823,9 @@ static int handle_turn_command(turn_turnserver *server, ts_ur_super_session *ss,
       if (!err_code)
         err_code = 400;
 
-      size_t len = ioa_network_buffer_get_size(nbh);
+      /*size_t len = ioa_network_buffer_get_size(nbh);
       stun_init_error_response_str(method, ioa_network_buffer_data(nbh), &len, err_code, reason, &tid);
-      ioa_network_buffer_set_size(nbh, len);
+      ioa_network_buffer_set_size(nbh, len);*/
       *resp_constructed = 1;
     }
 
